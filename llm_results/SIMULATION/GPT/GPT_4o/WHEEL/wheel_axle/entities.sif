@@ -1,0 +1,14 @@
+!------ Skeleton for body section -----
+Body 1
+  Name = MainBody
+End
+
+!------ Skeleton for boundary section -----
+Boundary Condition 1
+  Name = Top
+End
+
+Boundary Condition 2
+  Name = Bottom
+End
+

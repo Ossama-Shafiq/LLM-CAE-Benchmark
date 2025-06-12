@@ -1,0 +1,18 @@
+BEGIN_SIF
+
+Header
+  CHECK KEYWORDS Warn
+  Mesh DB . .
+  Include Path 
+  Results Directory 
+End
+
+Simulation
+  Min Output Level = 0
+  Max Output Level = 31
+  Output Caller = True
+
+  Coordinate System = Cartesian 2D
+  Coordinate Mapping(3) = 1 2 3
+
+  Simulation Type = Ste

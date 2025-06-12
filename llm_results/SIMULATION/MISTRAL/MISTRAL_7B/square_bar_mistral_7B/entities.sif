@@ -1,0 +1,30 @@
+!------ Skeleton for body section -----
+Body 1
+  Name = Bar
+End
+
+!------ Skeleton for boundary section -----
+Boundary Condition 1
+  Name = Bottom
+End
+
+Boundary Condition 2
+  Name = Top
+End
+
+Boundary Condition 3
+  Name = Side1
+End
+
+Boundary Condition 4
+  Name = Side2
+End
+
+Boundary Condition 5
+  Name = Side3
+End
+
+Boundary Condition 6
+  Name = Side4
+End
+

@@ -1,0 +1,44 @@
+W = 1; H = 1; L = 10;
+
+// Defining Points
+Point(1) = {0, 0, 0, L};
+Point(2) = {W, 0, 0, L};
+Point(3) = {W, H, 0, L};
+Point(4) = {0, H, 0, L};
+Point(5) = {0, 0, L, L};
+Point(6) = {W, 0, L, L};
+Point(7) = {W, H, L, L};
+Point(8) = {0, H, L, L};
+
+// Creating Lines
+Line(1) = {1, 2};
+Line(2) = {2, 3};
+Line(3) = {3, 4};
+Line(4) = {4, 1};
+Line(5) = {5, 6};
+Line(6) = {6, 7};
+Line(7) = {7, 8};
+Line(8) = {8, 5};
+Line(9) = {1, 5};
+Line(10) = {2, 6};
+Line(11) = {3, 7};
+Line(12) = {4, 8};
+
+// Creating Surfaces
+Plane Surface(1) = {1, 2, 3, 4};
+Plane Surface(2) = {5, 6, 7, 8};
+Plane Surface(3) = {9, 10, 11, 12};
+
+// Combining Surfaces into a Surface Loop
+Surface Loop(SL) = {1, 2, 3};
+
+// Creating Volume
+Volume(Bar) = {SL};
+
+// Assigning Names to Surfaces
+Physical Surface("Bottom") = {1};
+Physical Surface("Left") = {4};
+Physical Surface("Right") = {2};
+Physical Surface("Top") = {3};
+Physical Surface("Back") = {5};
+Physical Surface("Front") = {6};

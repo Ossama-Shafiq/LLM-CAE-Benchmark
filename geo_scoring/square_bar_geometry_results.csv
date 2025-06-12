@@ -1,0 +1,10 @@
+LLM,Structure,Dimensions,Quality,Score,Key Issues
+PHI-3 Mini,65%,✗,Poor,26%,Missing 7 lines
+Mixtral 8X22B,100%,✓,Excellent,100%,None
+Mixtral 8X7B,100%,✗,Fair,60%,Incorrect dimensions
+LLaMA-3-70B,100%,✓,Excellent,100%,None
+LLaMA-3-8B,100%,✗,Poor,40%,Incorrect dimensions
+LLaMA-2-70B,57%,✗,Poor,23%,Missing 3 points
+GPT-4o,100%,✓,Excellent,100%,None
+GPT-4,100%,✓,Excellent,100%,None
+GPT-3.5,62%,✓,Good,85%,Missing 3 surfaces

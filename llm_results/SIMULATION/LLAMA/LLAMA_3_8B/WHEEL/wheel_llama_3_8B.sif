@@ -1,0 +1,56 @@
+Header
+  CHECK KEYWORDS Warn
+  Mesh DB "." "."
+  Include Path ""
+  Results Directory ""
+End
+
+Simulation
+  Simulation Type = "Steady state"
+  Coordinate System = "Cartesian 2D"
+  Coordinate Mapping(3) = 1 2 3
+  Solver Input File = ""
+  Output File = ""
+  Post File = ""
+End
+
+Constants
+  ... (no gravity)
+End
+
+Body 1
+  Name = "Body1"
+  Equation = 1
+  Material = 1
+End
+
+Solver 1
+  ... (default solver settings)
+End
+
+Equation 1
+  Name = "Linear Elasticity"
+  ... (default equation settings)
+End
+
+Material 1
+  Name = "Steel"
+  Youngs Modulus = 200e9
+  Poisson Ratio = 0.3
+End
+
+Boundary Condition 1
+  Target Boundaries(1) = 2
+  Name = "Bottom"
+  Displacement 1 = 0
+  Displacement 2 = 0
+  Displacement 3 = 0
+End
+
+Boundary Condition 2
+  Target Boundaries(1) = 1
+  Name = "Top"
+  Force 2 = 5000000000
+  Force 1 = 0
+  Force 3 = 0
+End

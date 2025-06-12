@@ -1,0 +1,9 @@
+! ----- names for bodies -----
+$ Bar = 1
+! ----- names for boundaries -----
+$ Base = 1
+$ Front = 2
+$ Right = 3
+$ Back = 4
+$ Left = 5
+$ Top = 6

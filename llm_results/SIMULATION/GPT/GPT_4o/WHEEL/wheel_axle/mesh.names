@@ -1,0 +1,5 @@
+! ----- names for bodies -----
+$ MainBody = 1
+! ----- names for boundaries -----
+$ Top = 1
+$ Bottom = 2

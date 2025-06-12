@@ -1,0 +1,15 @@
+MIXTRAL SQUARE BAR
+
+--> We can see that mixtral uses three variables for the dimensions height, length and width as a pose to gpt-4 which understands that due to there being a square cross-section the length and width can be described using one variable instead. This does not cause a disruptance though as it is still valid but a point to note in understanding these subtle nuances
+
+--> Mixtral defines the points with coordinates based solely on the lengths provided, not taking into account the centering of the bar as a pose to gpt-4 which Defines the points with coordinates relative to the center of the bar and correctly calculates the coordinates based on the given dimensions and characteristic lengths.
+
+--> Mixtral misses the definition of the second line loop and simply defines the volume based on the first loop whereas gpt-4 defines the surfaces using proper loops and orientations and ensures that the loops are correctly defined and oriented to create closed surfaces.
+
+
+On initial inspection the square bar can indeed be visualised and looks correct when opening it with GMSH, the error arises when trying to generate the mesh .msh file, as it throws errors such as Curve loop 3 is wrong;again this can be attributed to the last two points mentioned above. Also inspecting the file structure it is clear that 6 physical surfaces are not constructed as we can only see 4 physical surfaces towards the end of the .geo file as it should be a cuboid shape ultimately.
+
+
+Thoughts:
+
+--- The system prompt should be altered in order to mitigate for these 3 points above, a revised system prompt with addition of the points above can possibly provide the correct .geo structure file.

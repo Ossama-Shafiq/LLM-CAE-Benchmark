@@ -1,0 +1,10 @@
+LLM,Square Bar,Wheel & Axle,Boolean Ops,Overall,Notes
+PHI-3 Mini,Poor,Fair,✗,Low,Limited to single parts
+Mixtral 8X22B,Excellent,Fair,✗,Medium,Limited to single parts
+Mixtral 8X7B,Fair,Good*,✗,Medium,Limited to single parts
+LLaMA-3-70B,Excellent,Good*,✗,Medium,Limited to single parts
+LLaMA-3-8B,Poor,Poor,✗,Low,Limited to single parts
+LLaMA-2-70B,Poor,Poor,✗,Low,Limited to single parts
+GPT-4o,Excellent,Fair*,⚠,High,Boolean ops fail (Volume reuse)
+GPT-4,Excellent,Good*,✗,Medium,Limited to single parts
+GPT-3.5,Good,Good*,✗,Medium,Limited to single parts

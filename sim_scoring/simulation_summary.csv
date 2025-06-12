@@ -1,0 +1,10 @@
+LLM,Avg Score,Square Bar,Wheel & Axle,Capability,Both Run?
+LLaMA-3-8B,92%,Excellent,Good,Excellent,Yes
+LLaMA-2-70B,8%,Poor,Poor,Poor,No
+PHI-3 Mini,48%,Poor,Excellent,Poor,No
+Mixtral 8X22B,100%,Excellent,Excellent,Excellent,Yes
+Mixtral 8X7B,100%,Excellent,Excellent,Excellent,Yes
+LLaMA-3-70B,100%,Excellent,Excellent,Excellent,Yes
+GPT-4o,100%,Excellent,Excellent,Excellent,Yes
+GPT-4,100%,Excellent,Excellent,Excellent,Yes
+GPT-3.5,100%,Excellent,Excellent,Excellent,Yes

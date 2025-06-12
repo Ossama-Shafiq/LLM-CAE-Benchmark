@@ -1,0 +1,38 @@
+-------------------------------------------------------
+Version       : 4.12.2
+License       : GNU General Public License
+Build OS      : Windows64
+Build date    : 20240121
+Build host    : gmsh.info
+Build options : 64Bit ALGLIB[contrib] ANN[contrib] Bamg Blas[petsc] Blossom Cgns DIntegration DomHex Eigen[contrib] Fltk Gmm[contrib] Hxt Jpeg Kbipack Lapack[petsc] MathEx[contrib] Med Mesh Metis[contrib] Mmg Mpeg Netgen NoSocklenT ONELAB ONELABMetamodel OpenCASCADE OpenCASCADE-CAF OpenGL OpenMP OptHom PETSc Parser Plugins Png Post QuadMeshingTools QuadTri Solver TetGen/BR Voro++[contrib] WinslowUntangler Zlib
+FLTK version  : 1.4.0
+PETSc version : 3.15.0 (real arithmtic)
+OCC version   : 7.7.2
+MED version   : 4.1.0
+Packaged by   : nt authority system
+Web site      : https://gmsh.info
+Issue tracker : https://gitlab.onelab.info/gmsh/gmsh/issues
+-------------------------------------------------------
+Info    : Running 'C:\Program Files\gmsh-4.12.2-Windows64\gmsh.exe C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo' [Gmsh 4.12.2, 1 node, max. 1 thread]
+Info    : Started on Tue May 14 16:03:46 2024
+Info    : Reading 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo'...
+Error   : 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo', line 21: Unknown variable 'Cylinder1_1'
+Error   : 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo', line 21: Unknown variable 'Cylinder1_2'
+Error   : 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo', line 21: Unknown variable 'Cylinder2_1'
+Error   : 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo', line 21: Unknown variable 'Cylinder2_2'
+Error   : OpenCASCADE surface loop with tag 1 already exists
+Error   : 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo', line 21: Could not add surface loop
+Error   : OpenCASCADE surface with tag 1 already exists
+Error   : 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo', line 22: Could not add plane surface
+Error   : OpenCASCADE volume with tag 1 already exists
+Error   : 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo', line 25: Could not add volume
+Error   : 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo', line 28: Unknown variable 'Cylinder1_1'
+Error   : 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo', line 28: Unknown variable 'Cylinder1_2'
+Error   : 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo', line 29: Unknown variable 'Cylinder2_1'
+Error   : 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo', line 29: Unknown variable 'Cylinder2_2'
+Warning : Skipping unknown surface 0 in physical surface 1
+Warning : Skipping unknown surface 0 in physical surface 1
+Warning : Skipping unknown surface 0 in physical surface 2
+Warning : Skipping unknown surface 0 in physical surface 2
+Info    : Done reading 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\wheel_mixtral_8X7B.geo'
+Info    : Writing 'C:\Users\ossama\Desktop\LLM_LIMITS\GEOMETRY\MISTRAL\NON_REPLICATE_MISTRALS_OWN_API\MIXTRAL_8X22B\WHEEL\error_notes'...

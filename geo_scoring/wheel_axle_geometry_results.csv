@@ -1,0 +1,10 @@
+LLM,Components,Boolean Ops,Quality,Score,Key Issues
+PHI-3 Mini,60%,✗,Fair,50%,"Need 2 wheels, found 1"
+Mixtral 8X22B,60%,✗,Fair,50%,"Need 2 wheels, found 1"
+Mixtral 8X7B,100%,✗,Good*,70%,No Boolean operations - components not merged
+LLaMA-3-70B,100%,✗,Good*,60%,No Boolean operations - components not merged
+LLaMA-3-8B,30%,✗,Poor,35%,"Need 2 wheels, found 0"
+LLaMA-2-70B,30%,✗,Poor,35%,"Need 2 wheels, found 0"
+GPT-4o,100%,⚠,Fair*,80%,Boolean will fail: Volume{1} reused after deletion
+GPT-4,100%,✗,Good*,60%,No Boolean operations - components not merged
+GPT-3.5,100%,✗,Good*,60%,No Boolean operations - components not merged

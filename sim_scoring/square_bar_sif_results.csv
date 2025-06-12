@@ -1,0 +1,10 @@
+LLM,File Quality,Status,Score,Accuracy,Key Issue
+PHI-3 Mini,Poor,Not ready,0%,Did not run,Missing Header
+Mixtral 8X22B,Excellent,Ready,100%,Excellent,None
+Mixtral 8X7B,Excellent,Ready,100%,Excellent,None
+LLaMA-3-70B,Excellent,Ready,100%,Excellent,None
+LLaMA-3-8B,Excellent,Ready,100%,Excellent,None
+LLaMA-2-70B,Poor,Not ready,5%,Did not run,Missing Simulation
+GPT-4o,Excellent,Ready,100%,Excellent,None
+GPT-4,Excellent,Ready,100%,Excellent,None
+GPT-3.5,Excellent,Ready,100%,Excellent,None

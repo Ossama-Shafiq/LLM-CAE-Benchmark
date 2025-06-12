@@ -1,0 +1,94 @@
+Header
+  CHECK KEYWORDS Warn
+  Mesh DB "." "."
+  Include Path ""
+  Results Directory ""
+End
+
+Simulation
+  Min Output Level = 0
+  Max Output Level = 31
+  Output Caller = True
+
+  Coordinate System = "Cartesian 3D"
+  Coordinate Mapping(3) = 1 2 3
+
+  Simulation Type = "Steady State"
+  Steady State Max Iterations = 20
+  Output Intervals = 1
+
+  Solver Input File = "wheel_axle.sif"
+  Output File = "wheel_axle.dat"
+  Post File = "wheel_axle.ep"
+  Mesh Input File
+    File "wheel_axle.mif"
+End
+
+Constants
+End
+
+Body 1
+  Name = "Wheel and Axle"
+
+  Equation = 1
+  Material = 1
+End
+
+Equation 1
+  Name = "elasticity"
+  Active Solvers(1) = 1
+End
+
+Solver 1
+  Equation = Linear elasticity
+  Procedure = "StressSolve" "StressSolver"
+  Exec Solver = Always
+  Optimize Bandwidth = True
+  Steady State Convergence Tolerance = 1.0e-5
+  Nonlinear System Convergence Tolerance = 1.0e-7
+  Nonlinear System Max Iterations = 20
+  Nonlinear System Newton After Iterations = 3
+  Nonlinear System Newton After Tolerance = 1.0e-3
+  Nonlinear System Relaxation Factor = 1
+  Linear System Solver = Iterative
+  Linear System Iterative Method = BiCGStab
+  Linear System Max Iterations = 500
+  Linear System Convergence Tolerance = 1.0e-10
+  BiCGstabl polynomial degree = 2
+  Linear System Preconditioning = ILU0
+  Linear System ILUT Tolerance = 1.0e-3
+  Linear System Abort Not Converged = False
+  Linear System Residual Output = 10
+  Linear System Precondition Recompute = 1
+End
+
+Material 1
+  Name = "Steel"
+
+  Youngs modulus = 200.0e9
+  Poisson ratio = 0.3
+End
+
+Initial Condition 1
+  Name = "InitialCondition"
+  Displacement 1 = 0
+  Displacement Velocity 1 = 0
+  Displacement Velocity 2 = 0
+  Displacement Velocity 3 = 0
+End
+
+Boundary Condition 1
+  Name = "Bottom"
+  Target Bodies(1) = 1
+
+  Displacement 1 = 0
+  Displacement 2 = 0
+  Displacement 3 = 0
+End
+
+Boundary Condition 2
+  Name = "Top"
+  Target Bodies(1) = 1
+
+  Force 3 = 5000000000
+End

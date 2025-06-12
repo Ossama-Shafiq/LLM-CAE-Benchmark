@@ -1,0 +1,28 @@
+# Simulation Type: "Steady state", Constants: no gravity, Material Properties: steel, Boundary Conditions as specified.
+
+[Solid]
+Volume("SteelBar") = {Bar}; // Defines the bar geometry for analysis
+
+[Nodes]
+Node(1) = {-a/2, -a/2, 0};
+Node(2) = {a/2, -a/2, 0};
+Node(3) = {a/2, a/2, 0};
+Node(4) = {-a/2, a/2, 0};
+Node(5) = {-a/2, -a/2, L};
+Node(6) = {a/2, -a/2, L};
+Node(7) = {a/2, a/2, L};
+Node(8) = {-a/2, a/2, L};
+
+[Solid Elements]
+HexahedronElement("SteelBar") = {"Bar", "Top"}; // Assumes hexahedral elements are used for linear elasticity analysis in steady state
+
+[Physics Groups]
+Group(Bottom) = {Bottom, Physical Group(ForceYDirection)}; // Combining Boundary 1 and Force application on Boundary 2
+
+[Solid Elements Physics]
+Element("SteelBar") = {"HexahedronElement", "SteelBar"};
+Material("SteelBar") = {Elastic=200 GPa, PoissonRatio=0.3}; // Typical values for steel material properties in steady state analysis
+
+[Boundary Conditions]
+BC(Bottom) = {Fixed}; // Bottom boundary is fixed (no deformation)
+BC(ForceYDirection) = {ForceY, Force=100000000 N}; // Top boundary is subjected to a force of 100000000 N in the y direction

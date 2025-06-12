@@ -1,0 +1,24 @@
+-------------------------------------------------------
+Version       : 4.12.0
+License       : GNU General Public License
+Build OS      : MacOSX
+Build date    : 20231221
+Build host    : gmsh.info
+Build options : 64Bit ALGLIB[contrib] ANN[contrib] Bamg Blas[petsc] Blossom Cgns DIntegration Dlopen DomHex Eigen[contrib] Fltk GMP Gmm[contrib] Hxt Jpeg Kbipack Lapack[petsc] MathEx[contrib] Med Mesh Metis[contrib] Mmg Mpeg Netgen ONELAB ONELABMetamodel OpenCASCADE OpenCASCADE-CAF OpenGL OpenMP OptHom PETSc Parser Plugins Png Post QuadMeshingTools QuadTri Solver TetGen/BR TouchBar Voro++[contrib] WinslowUntangler Zlib
+FLTK version  : 1.4.0
+PETSc version : 3.15.0 (real arithmtic)
+OCC version   : 7.7.2
+MED version   : 4.1.0
+Packaged by   : geuzaine
+Web site      : https://gmsh.info
+Issue tracker : https://gitlab.onelab.info/gmsh/gmsh/issues
+-------------------------------------------------------
+Info    : Running '/Applications/Gmsh.app/Contents/MacOS/gmsh' [Gmsh 4.12.0, 1 node, max. 1 thread]
+Info    : Started on Wed Jun 26 23:32:08 2024
+Info    : Reading '/Users/ossamashafiq/Library/CloudStorage/OneDrive-UniversityofBirmingham/BACKUP_LLM_updated/GEOMETRY/GPT/GPT_4o/wheel_axle_gpt_4o.geo'...
+Error   : OpenCASCADE point with tag 3 already exists
+Error   : '/Users/ossamashafiq/Library/CloudStorage/OneDrive-UniversityofBirmingham/BACKUP_LLM_updated/GEOMETRY/GPT/GPT_4o/wheel_axle_gpt_4o.geo', line 18: Could not add point
+Error   : OpenCASCADE point with tag 4 already exists
+Error   : '/Users/ossamashafiq/Library/CloudStorage/OneDrive-UniversityofBirmingham/BACKUP_LLM_updated/GEOMETRY/GPT/GPT_4o/wheel_axle_gpt_4o.geo', line 19: Could not add point
+Info    : Done reading '/Users/ossamashafiq/Library/CloudStorage/OneDrive-UniversityofBirmingham/BACKUP_LLM_updated/GEOMETRY/GPT/GPT_4o/wheel_axle_gpt_4o.geo'
+Info    : Writing '/Users/ossamashafiq/Library/CloudStorage/OneDrive-UniversityofBirmingham/BACKUP_LLM_updated/GEOMETRY/GPT/GPT_4o/errors_40'...

@@ -1,0 +1,10 @@
+Header
+  CHECK KEYWORDS Warn
+  Mesh DB "." "."
+  Include Path ""
+  Results Directory ""
+  Simulation Type Steady state
+  Constants
+    Gravity(4) = 0 -1 0 9.82
+    Stefan Boltzmann = 5.670374419e-08
+    Permittivity of Vacuum = 8.

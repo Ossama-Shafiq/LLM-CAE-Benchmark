@@ -51,3 +51,4 @@ cache/
 # Logs
 *.log
 logs/
+*.msh

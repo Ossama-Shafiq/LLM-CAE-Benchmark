@@ -34,6 +34,7 @@ config.ini
 # Large data files
 *.vtu
 *.pvd
+*.msh
 
 # Results and temporary files
 results/

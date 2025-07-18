@@ -177,6 +177,18 @@ See the [`prompts/`](./prompts/) directory for all system and user prompts used 
 4. **Model Size Paradox**: PHI-3 Mini showed extreme variability (0% to 97% between similar tasks) despite consistent prompting
 5. **Clear Winners**: GPT-4, GPT-4o, and Mixtral 8X22B achieved 100% on both geometry and simulation for simple cases
 
+## 📝 Citation
+
+If you use this benchmark in your research, please cite:
+```bibtex
+@article{shafiq2024evaluating,
+  title={Evaluating the Performance of Large Language Models for Geometry and 
+         Simulation File Generation in Physics-Based Simulations},
+  author={Shafiq, Ossama and Alexiadis, Alessio and Ghiassi, Bahman},
+  journal={},
+  year={2024}
+}
+```
 
 ## 📄 License
 
